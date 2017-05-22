@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="example_02">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Examples</title>
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/navbar-fixed-top.css" rel="stylesheet" />
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/examples.js"></script>
+</head>
+<body ng-controller="myCtrl">
+
+<div ng-include="'include/navbar.html'"></div>
+
+<div class="container">
+    <h3>Controller binding</h3>
+    <div class="form-group">
+        <label>First name:</label>
+        <input type="text" ng-model="firstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Last name:</label>
+        <input type="text" ng-model="lastName" class="form-control" />
+    </div>
+    <div class="alert alert-success">
+        <strong>Hello {{firstName}} {{lastName}}</strong>
+    </div>
+</div>
+
+<div ng-include="'include/footer.html'"></div>
+
+</body>
+</html>
