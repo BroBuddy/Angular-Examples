@@ -2,12 +2,18 @@
   "name": "angular-examples",
   "version": "1.0.0",
   "description": "Angular Examples",
-  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/BroBuddy/Angular-Examples.git"
   },
   "author": "Sebastian Stein",
   "license": "ISC",
-  "homepage": "https://github.com/BroBuddy/Angular-Examples#readme"
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.1"
+  },
+  "dependencies": {}
 }

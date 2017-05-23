@@ -1,7 +1,6 @@
-.tmp
 .idea
+.sass-cache
 dist
 bower_components
 node_modules
-.sass-cache
 npm-debug.log
